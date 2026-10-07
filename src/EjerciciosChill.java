@@ -60,7 +60,7 @@ public class EjerciciosChill {
         float num = obj.nextFloat();
 
         long ent= (long) num;
-        double dec= num-ent;
+        float dec= num-ent;
 
         System.out.println("Parte entera: "+ent+", parte decimal: "+dec);
     }
@@ -190,15 +190,16 @@ public class EjerciciosChill {
         System.out.println("Ingrese la cantidad de segundos que quiere convertir");
         int seg = obj.nextInt();
 
-        double conversiónMin = seg/60;
-        double horas= conversiónMin /60;
+        double conversionMin = seg/60;
+        double horas= conversionMin /60;
 
 
-        System.out.println("Los segundos proporcionados convertidos son: "+horas+":");
-
-
+        System.out.println("Los segundos proporcionados son: "+seg);
+        System.out.println("La conversión es:");
 
     }
+
+
 
 
 

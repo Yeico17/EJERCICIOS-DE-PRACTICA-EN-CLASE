@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         EjerciciosChill e = new EjerciciosChill();
-        e.entDec();
+        e.nombreNumero(0);
         //System.out.println(e.calcularIVA(20000));
     }
 

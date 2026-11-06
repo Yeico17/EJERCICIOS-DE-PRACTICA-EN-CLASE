@@ -2,6 +2,17 @@ import javax.swing.*;
 import java.util.Scanner;
 
 public class EjerciciosChill {
+    void palabras() {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("ingrese la primera palabra");
+        String palabra1 = myObj.nextLine();
+        System.out.println("ingrese la segunda palabra");
+        String palabra2 = myObj.nextLine();
+        System.out.println(palabra1+" "+palabra2);
+    }
+
+
+
     void nombre() {
         Scanner myObj = new Scanner(System.in);
         System.out.println("ingrese su nombre");
@@ -162,8 +173,20 @@ public class EjerciciosChill {
 
     }
 
-    public static int distPuntos(){
-        return 0;
+    public static double distPuntos() {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Ingrese x1: ");
+        double x1 = obj.nextDouble();
+        System.out.println("Ingrese y1: ");
+        double y1 = obj.nextDouble();
+        System.out.println("Ingrese x2: ");
+        double x2 = obj.nextDouble();
+        System.out.println("Ingrese y2: ");
+        double y2 = obj.nextDouble();
+
+        double distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        System.out.println("La distancia entre los puntos es: " + distancia);
+        return distancia;
 
     }
 
@@ -496,8 +519,18 @@ public class EjerciciosChill {
         }
     }
 
+    public void patronTrianguloArroba(int filas) {
+
+        for (int i = 1; i <= filas; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("@");
+            }
+            System.out.println();
+        }
+    }
+
     public void patronTrianguloSimbolos(int filas) {
-        // Patrón de asteriscos decreciente
+
         for (int i = filas; i >= 1; i--) {
             for (int j = 0; j < i; j++) {
                 System.out.print("*");
@@ -557,7 +590,7 @@ public class EjerciciosChill {
         System.out.println("d. Ingreso total: $" + totalPesosCOP + " COP | $" + totalDolares + " USD");
     }
 
-    
+
 
 
 

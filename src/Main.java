@@ -5,8 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
         EjerciciosChill e = new EjerciciosChill();
-        e.nombreNumero(0);
+        e.palabras();
         //System.out.println(e.calcularIVA(20000));
+
     }
 
 }
